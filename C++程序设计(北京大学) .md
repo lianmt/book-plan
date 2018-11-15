@@ -420,7 +420,7 @@ func(10, , 8) // 不行，只能最右边的连续若干个参数缺省
 
 ## [](https://www.yuque.com/lianmt/it/fgmi63#ms4gxr)19 | 友元函数
 
-## [](https://www.yuque.com/lianmt/it/fgmi63#75otfy)20 | this指针
+## 20 | this指针
 
 this指针指向，成员函数所作用的那个对象。
 
@@ -428,8 +428,41 @@ this指针指向，成员函数所作用的那个对象。
 
 ![](http://upload-images.jianshu.io/upload_images/3317226-7d1b1c34553ad256.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-## [](https://www.yuque.com/lianmt/it/fgmi63#ggtroe)21 | 常量对象、常量成员函数和常引用
+## 21 | 常量对象、常量成员函数和常引用
 
 ![](https://upload-images.jianshu.io/upload_images/3317226-0af782857b34a832.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+## 22 | 运算符重载的基本概念
+运算符重载
+对已有的运算符赋予多重的含义
+
+使同一运算符作用于不同类型的数据时 -> 不同类型的行为
+目的
+
+扩展C++中提供的运算符的适用范围，以用于类所表示的抽象数据类型
+同一个运算符，对不同类型的操作数，所发生的行为不同。
+
+## 23 | 赋值运算符的重载
+
+赋值运算符“=”只能重载为 **成员函数**
+
+### [](https://www.yuque.com/lianmt/it/fgmi63#okm2gc)重载赋值运算符的意义-浅复制和深复制
+
+浅复制/浅拷贝
+
+*   执行逐个字节的复制工作
+
+![](http://upload-images.jianshu.io/upload_images/3317226-8d4d056b0f928b9d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![](http://upload-images.jianshu.io/upload_images/3317226-b19891b325a45fcf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+浅复制/浅拷贝的bug：
+
+s1 = s2有个问题，当内存空间同时消亡的时候，那么（2）的内存空间就会被先后释放2次，这样会导致严重的内存错误，甚至可能引发程序的意外终止。
+
+深复制/深拷贝：
+
+![](http://upload-images.jianshu.io/upload_images/3317226-bb11575c7ce618c1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 
 [视频链接](https://www.bilibili.com/video/av10046030/?p=3)
